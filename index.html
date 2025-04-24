@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home - Business Website">
+    <meta name="keywords" content="business, services, home">
+    <meta name="author" content="Your Company">
+    <title>Home of Business</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="./fc4a3f64-c36c-4ac1-9e98-cf38e9a04d20.png" type="image/png">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><img src="./fc4a3f64-c36c-4ac1-9e98-cf38e9a04d20.png" alt="Logo" id="navbar-logo"></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="extra.html">Extra</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- User Greeting Section -->
+    <section id="userGreeting" style="text-align: center; margin-top: 20px;">
+        <h2>Welcome, <span id="userName">User</span>!</h2>
+        <button id="logoutButton">Logout</button>
+    </section>
+
+<!-- Hero Section -->
+<section id="hero">
+    <div class="container">
+        <h2 class="HB1">We <span id="typedText"></span></h2>
+        <h1 id="HB">Welcome to HB (home of business)</h1>
+        <p>Your trusted partner in providing exceptional business solutions.</p><br>
+        <a href="contact.html" class="cta-button">Get in Touch</a>
+    </div>
+</section>
+
+<button id="darkToggle">🌔</button>
+
+</nav>
+</header>
+
+<!-- Services Preview Section -->
+<section id="services" class="services-section">
+<div class="container">
+<h2>Our Services</h2>
+<div class="service-items">
+    <div class="service-item">
+        <i class="fas fa-cogs"></i>
+        <h3>Service 1</h3>
+        <p>We create different types of website. e.g e-commerce, restuarant, programming......</p>
+    </div>
+    <div class="service-item">
+        <i class="fas fa-clipboard-list"></i>
+        <h3>Service 2</h3>
+        <p>we are fast and very reliable.</p>
+    </div>
+    <div class="service-item">
+        <i class="fas fa-chart-line"></i>
+        <h3>Service 3</h3>
+        <p>we support you in any work you do.</p>
+    </div>
+</div>
+</div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about-section">
+<div class="container">
+<h2>About Us</h2>
+<p>We are a company committed to providing top-tier business solutions for your needs. We specialize in delivering results-driven services that cater to your business’s success.</p>
+</div>
+</section>
+
+<section id="testimonials">
+    <div class="container">
+        <h2 class="section-title animate-on-scroll">What Our Clients Say</h2>
+        <div class="testimonial">
+            <p>"This company has transformed the way we do business. Highly recommended!"</p>
+            <p>- Client A</p>
+        </div>
+        <div class="testimonial">
+            <p>"Amazing customer service and great results. Our revenue increased by 40%!"</p>
+            <p>- Client B</p>
+        </div>
+        <div class="testimonial">
+            <h2 class="section-title animate-on-scroll">subscription</h2>
+            <p>"This site is Amazing its very reliable, secure and virus free here you can buy "ads-free, subscription and news-letter"</p>
+            <a class="ai" href="subcribe.html">subcribe</a>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section id="features">
+    <div class="container">
+        <h2>Our Key Features</h2>
+        <div class="feature-item">
+            <i class="fas fa-check-circle"></i>
+            <h3>Feature 1</h3>
+            <p>High-quality service with a focus on efficiency.</p>
+        </div>
+        <div class="feature-item">
+            <i class="fas fa-rocket"></i>
+            <h3>Feature 2</h3>
+            <p>Innovative solutions that drive business growth.</p>
+        </div>
+        <div class="feature-item">
+            <i class="fas fa-lock"></i>
+            <h3>Feature 3</h3>
+            <p>Security at the core of everything we do.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Top Button -->
+<button id="scrollToTopBtn" title="Go to top">↑</button>
+
+<div class="fixed-icons">
+    <a href="./contact.html" class="icon email" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+    </a>
+    <a href="https://wa.me/+2348067281170" class="icon whatsapp" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</div>
+<script src="./logout.js"></script> 
+<script src="./script.js"></script>
+<script src="./setup.js"></script>
+<script>
+    const animatedItems = document.querySelectorAll('.animate-on-scroll');
+  
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+  
+    animatedItems.forEach(item => {
+      observer.observe(item);
+    });
+  </script>
+  <!-- Load the AdSense script (you already have this part) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1243697761577753"
+crossorigin="anonymous"></script>
+
+<!-- Display the ad unit -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-1243697761577753"
+data-ad-slot="YOUR-AD-SLOT-ID"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  
+<!-- Footer Section -->
+<footer>
+    <div class="container">
+        <p id="year">© 2025 Home of Business | All rights reserved</p>
+        <ul class="social-media-links">
+            <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+            <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+        </ul>
+    </div>
+</footer>
+
+</body>
+</html>
